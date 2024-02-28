@@ -1,0 +1,213 @@
+
+
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand"	>
+		<img src="assets\image\BankLogo.png" alt="Logo" width="40px" height="40px"><span data-end="S" class="Logonamef">Kotta'</span><span class="Logonames">Bank</span>
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="mr-auto"></div>
+      <ul class="navbar-nav my-2 my-lg-0">
+<li class="nav-item active">
+        <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+      </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+          Profile
+        </a>
+          <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+            <h6 class="dropdown-header">Actions</h6>
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" (click)="logout()">Logout</a>
+          </div>
+
+        </li>
+
+      </ul>
+
+      </div>
+  </nav>
+<!-- tabs -->
+<div class="container" style="border: 1px solid rgb(36,37,38);">
+	<div class="row">
+   		<div class="col-sm-12" >
+   			<!-- <h2>Website &amp; Software Development</h2> -->
+   			<div class="tab-container sticky-top" style="z-index: auto;">
+		      <ul class="nav nav-tabs nav-tabs-left nav-centered fixed-top navbar navbar-expand-lg "  role="tablist" id="navtab"  >
+		        <li role="presentation" class="active">
+		          <a href="#web-dev" data-toggle="tab" role="tab" id="taba"> 
+		            Deposit & Debit The Money
+		          </a>
+		        </li>
+		        <li role="presentation">
+		          <a href="#graphic" data-toggle="tab" role="tab" id="taba">
+		           Account Deatails
+		          </a>
+		        </li>
+		        <li role="presentation">
+		          <a href="#marketing" data-toggle="tab" role="tab" id="taba">
+		          Accounts History
+		          </a>
+		        </li>
+		        <li role="presentation">
+		          <a href="#business" data-toggle="tab" role="tab" id="taba">
+		            
+		          </a>
+		        </li>
+		      </ul>
+		      <div id="my_side_tabs" class="tab-content side-tabs side-tabs-left">
+		        <div  id="web-dev" role="tabpanel"  class="tab-pane active">
+		        	<div class="global-container">
+						<div class="card">
+						<div class="card-body">
+							<h3 class="card-title">DEPOSIT & Debit The MONEY</h3>
+							<div class="card-text">
+								<!--
+								<div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+								<form [formGroup]="registrationForm" >
+									<!-- to error: add class "has-danger" -->
+									<div class="form-group">
+										<label for="exampleInputacnumber1">Account Number</label>
+										<input class="form-control form-control-sm"  aria-describedby="emailHelp" type="number" id="userId" [(ngModel)]="userId" name="userId" required formControlName="acnum" [ngClass]="{'error': isInvalid('acnum'), 'valid': isValid('acnum')}" (blur)="validateField('acnum')" [style.background-color]="isInvalid('acnum') ? '#FFFFFF' : (isValid('acnum') ? '#FFFFFF' : '#F0F0F0')">
+										<div *ngIf="isInvalid('acnum')" class="error-message">
+											<div *ngIf="registrationForm.get('acnum')?.hasError('required')">Please enter the account number</div>
+											<div *ngIf="registrationForm.get('acnum')?.hasError('pattern')">Invalid account number</div>
+										  </div>
+									</div>
+									<div class="form-group">
+										<label for="exampleInputselectoption1">Transaction Type</label>
+										<select class="form-select" aria-label="Default select example" id="transactionType" [(ngModel)]="transactionType" name="transactionType" required  class="form-control form-control-sm" formControlName="type" [ngClass]="{'error': isInvalid('type'), 'valid': isValid('type')}" (blur)="validateField('type')" [style.background-color]="isInvalid('acnum') ? '#FFFFFF' : (isValid('acnum') ? '#FFFFFF' : '#F0F0F0')">
+										  <option disabled>Select Your Transaction Type</option>
+										  <option value="deposit">Deposit</option>
+										  <option value="debit">Debit</option>
+										</select>
+										<div *ngIf="isInvalid('type')" class="error-message">Please select the type</div>
+									</div>
+							<div class="form-group">
+							<label for="exampleInputamount1">Amount</label>
+										<input  class="form-control form-control-sm"  type="number" id="amount" [(ngModel)]="amount" name="amount" required formControlName="amount" [ngClass]="{'error': isInvalid('amount'), 'valid': isValid('amount')}" (blur)="validateField('amount')" [style.background-color]="isInvalid('acnum') ? '#FFFFFF' : (isValid('acnum') ? '#FFFFFF' : '#F0F0F0')">
+										<div *ngIf="isInvalid('amount')" class="error-message">
+											<div *ngIf="registrationForm.get('amount')?.hasError('required')">Please enter the amount</div>
+											<div *ngIf="registrationForm.get('amount')?.hasError('pattern')">Invalid  amount</div>
+											<div *ngIf="registrationForm.get('amount')?.hasError('amountExceeded')">Amount for deposit should not exceed 49000</div>
+										  </div>
+							</div>
+									<button class="btn btn-primary btn-block" type="button" [disabled]="registrationForm.invalid" (click)="depositOrWithdraw()">{{ registrationForm.get('type')?.value === 'deposit' ? 'Deposit' : 'Debit' }}</button>				
+									<div class="sign-up">
+									Please once check before enter the details
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					</div>
+		        	
+		        	
+		        </div>
+		        <div class="tab-pane fade" id="graphic" role="tabpanel">
+					<div class="inputsearch" >
+						<input class="form-control" type="search" placeholder="Search AC Number" aria-label="Search" [(ngModel)]="searchQuery" >
+						</div>
+					<!-- <input type="text"  placeholder="Search..." > -->
+					<h3 class="card-title" style=" padding: 20px">Account Details</h3>
+					<div class="container account_history"  >
+						<table id="example" class="table table-striped table-hover table-bordered" style="width:100%">
+								<thead>
+									<!-- account-details -->
+									<tr>
+										<th>Number of accounts</th>
+										<th>Account number</th>
+										<th>Name</th>
+										<th>Email</th>
+										<th>Adhar_number</th>
+										<th>Age</th>
+										<th>Education</th>
+										<th>City</th>
+										<th>State</th>
+										<th>Mobime number</th>
+										<th>Fathers's name</th>
+										<th>Balance</th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr *ngFor="let item of data |serchAccounts:searchQuery">
+										<td>{{item.id}}</td>
+										<td>{{item.ACCOUNTNUMBER }}</td>
+										<td>{{item.name}}</td>
+										<td>{{item.email |asteriskMask}}</td>
+										<td>{{item.adhar_number}}</td>
+										<td>{{item.age}}</td>
+										<td>{{item.education}}</td>
+										<td>{{item.city}}</td>
+										<td>{{item.state}}</td>
+										<td>{{item.mobilenumber |asteriskMask}}</td>
+										<td>{{item.fathersname}}</td>
+										<td>{{item.balance}}</td>
+										
+									</tr>
+							
+								</tbody>
+								
+							</table>
+						</div>
+		        </div>
+		        <div class="tab-pane fade" id="marketing" role="tabpanel">
+					<div class="inputsearch">
+						<input class="form-control" type="search" placeholder="Search  Ac Number" aria-label="Search" [(ngModel)]="searchQuery">
+						</div>
+						<h3 class="card-title" style=" padding: 20px">Account History</h3>
+					<div class="container account_history">
+						<table id="example"  class="table table-striped table-hover table-bordered"style="width:100%">
+							<thead>
+								<!-- account-details -->
+								<tr >
+									<th>Account number</th>
+									<th>Transaction_type</th>
+									<th>Amount</th>
+									<th>Date & Time</th>
+									
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr *ngFor="let item of datatransaction |search:searchQuery">
+									<td>{{item.user_id}}</td>
+									<td>{{item.transaction_type}}</td>
+									<td>{{item.amount}}</td>
+									<td>{{item.timestamp}}</td>
+									
+									
+								</tr>
+						
+							</tbody>
+							
+								
+							</table>
+						</div>
+		        </div>
+		        <div class="tab-pane fade" id="business" role="tabpanel">
+		        	
+		        </div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+	</div>
+
+	
+  
+</body>
+<app-footer></app-footer>

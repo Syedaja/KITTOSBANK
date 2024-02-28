@@ -1,0 +1,34 @@
+<div>
+    <h2>Register</h2>
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" formControlName="name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" formControlName="password" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="number" id="password" formControlName="account_number" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="number" id="password" formControlName="age" />
+        <div>
+            <label for="password">Password</label>
+            <input type="number" id="password" formControlName="adhar_number" />
+          </div>
+      </div>
+      <div>
+        <button type="submit" [disabled]="registrationForm.invalid" (click)="userSubmit()">Register</button>
+        <div class="error-message">{{ errorMessage }}</div>
+      </div>
+    </form>
+  </div>
+  

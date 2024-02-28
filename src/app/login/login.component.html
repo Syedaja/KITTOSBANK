@@ -1,0 +1,49 @@
+
+<div class="logo-container-lo">
+    <div class="logo-lo"><a href="#"><img src="assets\image\BankLogo.png" alt="Logo"><span data-end="s" class="Logonamef">Kotta'</span><span class="Logonames">Bank</span></a></div>
+  </div>
+<!-- left image and right input form -->
+<div class="container-lo">
+    <div class="left-side">
+      <img src="https://www.transparentpng.com/thumb/children/a44HME-kid-png-free-kid-png-transparent-images-pngio.png" alt="Left Side Image">
+    </div>
+    <div class="right-side">
+      <div class="content-container">
+        <h1>Thank you for choosing  Kotta's Bank</h1>
+        <p class="para">A few details about yourself that would help us in putting the right executive for your query</p>
+      </div>
+      <form  class="input-boxp" #f="ngForm" novalidate (ngSubmit)="f.form.valid&&onSubmit()">
+     
+      
+     
+      
+      <input class="input-box" type="email" placeholder="Email" name="email"  id="" placeholder="email" [(ngModel)]="formdata.email" #email="ngModel" required>
+      <div class="text-danger" *ngIf="this.submit&&email.errors?.['required']" >
+        Email is required.
+      </div>
+      <input class="input-box" type="pass" placeholder="Password" id="inputPassword" type="password"  name="password" placeholder="password" id="" [(ngModel)]="formdata.password" #password="ngModel" required >
+      <div class="text-danger" *ngIf="this.submit&&password.errors?.['required']">
+        Password is required.
+      </div>
+      <!-- <p class="input-boxp">By giving us your mobile number, you agree that IDFC FIRST Bank can call you</p>    -->
+      <button class="submit-button" type="submit"  (click)="submit=true">Login</button>
+      <a href="/account_open" class="alreadyacc">Open your account?</a>
+      <span class="text-danger" *ngIf="this.errorMessage" >
+        <p [innerText]="this.errorMessage"></p>
+        </span>
+        <div class="loading-container">
+          <div class="loading-spinner" [ngClass]="{'show':loading}"></div>
+        </div>
+      </form >
+    </div>
+  </div>
+
+  <!-- footer -->
+  <app-footer></app-footer>
+
+
+  
+  
+
+
+  

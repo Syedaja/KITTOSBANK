@@ -1,0 +1,99 @@
+body{
+  background-color: rgb(255,255,255);
+}
+#container {
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .11);
+   width: 50%;
+   padding: 20px;
+   margin-top: 110px;
+}
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .result {
+    margin-top: 20px;
+  }
+  .logo-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    background-color:rgb(255,255,255);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);
+    
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  .Logonamef{
+    padding:0px 0px 0px 5px; position:absolute;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800;
+  }
+  .Logonames{
+    padding:18px 0px 0px 5px; position:absolute;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 800;
+  
+  }
+  .Logonamef::after{
+    content: attr(data-end) ;
+    color:rgb(235,28,36) ;
+  }
+  .fix{
+    padding: 20px 0px;
+    font-size: 20px;
+  }
+  .form-control{
+    border-radius: 0px;
+  }
+  /* table */
+
+  .table__head{
+    color: #FFF;
+    font-weight: 700;
+    background: rgb(37,38,46);
+    /* background: -moz-linear-gradient(-45deg, #9b4085 0%, #608590 100%);
+    background: -webkit-linear-gradient(-45deg, #9b4085 0%,#608590 100%);
+    background: linear-gradient(135deg, #9b4085 0%,#608590 100%);
+    white-space: nowrap; */
+    }
+    .table-bordered td, .table-bordered th{
+    border: 0px solid #FFF;
+    }
+    .coin {
+    width:8%;
+    margin-left: 5px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    }
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+    
+    .winner__table{
+        white-space: nowrap;
+    }
+    
+    @media screen and (max-width: 567px) {
+    
+        .winner__table{
+        font-size: 12px;
+        }
+        .coin {
+        width:15%;
+        margin-left:2px;
+        }
+    }
+  

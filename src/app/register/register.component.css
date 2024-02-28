@@ -1,0 +1,22 @@
+/* Apply styles to the input when it's invalid */
+.error  {
+    border-color: red;
+    border: 2px solid red;
+  }
+  
+  /* Apply styles to the input when it's valid */
+  .valid  {
+    border-color: green;
+    border: 2px solid green;
+  }
+  
+  /* Style the error message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }
+  input{
+    width: 30%;
+    height:50px;
+  }
+  

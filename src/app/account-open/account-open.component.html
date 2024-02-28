@@ -1,0 +1,225 @@
+<!-- logo container -->
+<div class="logo-container-AO" >
+    <div class="logo-AO"><a href="#"><img src="assets\image\BankLogo.png" alt="Logo"><span data-end="s" class="Logonamef-AO">Kotta'</span><span class="Logonames-AO">Bank</span></a></div>
+    <div class="openaccount-AO">
+      <h2>Open Your Account</h2>
+    </div>
+  </div>
+
+
+  
+<!-- left image and right input form -->
+
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+<div class="container-AO">
+ <!-- crads conrainer 6 -->
+<!-- 1 -->
+    <div class="six_main_containerAP">
+    <div class="containerAP">
+        <div class="titleAP">Saving Account</div>
+        <div style="display: flex; justify-content: space-between;" >
+        <div class="sub-titleAP">ZERO charges on non-home branch transactions</div>
+        <div class="image-containerAP">
+          <img class="image" src="assets/image/saving_account_01.png" alt="Image 1" width="100px" height="110px">
+        </div>
+    </div>
+        <div class="button-containerAP">
+            <button class="apply-now-btn">Apply Now</button>
+            <a class="know-more-link" href="#">Know More</a>
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="containerAP">
+        <div class="titleAP">Credit Card</div>
+        <div style="display: flex; justify-content: space-between;" >
+        <div class="sub-titleAP">Get up to 10X Reward Points that never expire</div>
+        <div class="image-containerAP">
+            <img class="image" src="assets/image/credit_card_01.png" alt="Image 1" width="100px" height="110px">
+        </div>
+    </div>
+        <div class="button-containerAP">
+            <button class="apply-now-btn">Apply Now</button>
+            <a class="know-more-link" href="#">Know More</a>
+        </div>
+    </div>
+    <!-- 3 -->
+    <div class="containerAP">
+        <div class="titleAP">Personal Loan</div>
+        <div style="display: flex; justify-content: space-between;" >
+        <div class="sub-titleAP">Get up to ₹1 crore at attractive interest rates</div>
+        <div class="image-containerAP">
+            <img class="image" src="assets/image/personal_loan_01.png" alt="Image 1" width="100px" height="110px">
+        </div>
+    </div>
+        <div class="button-containerAP">
+            <button class="apply-now-btn">Apply Now</button>
+            <a class="know-more-link" href="#">Know More</a>
+        </div>
+    </div>
+    <div class="containerAP">
+        <div class="titleAP">Fixed Deposit</div>
+        <div style="display: flex; justify-content: space-between;" >
+        <div class="sub-titleAP">Earn up to 7.75% p.a.</div>
+        <div class="image-containerAP">
+            <img class="image" src="assets/image/Fixed-Deposits-01.png" alt="Image 1" width="100px" height="110px">
+        </div>
+    </div>
+        <div class="button-containerAP">
+            <button class="apply-now-btn">Apply Now</button>
+            <a class="know-more-link" href="#">Know More</a>
+        </div>
+    </div>
+    <div class="containerAP">
+        <div class="titleAP">Mutual Funds</div>
+        <div style="display: flex; justify-content: space-between;" >
+        <div class="sub-titleAP">Invest in top funds curated by our experts</div>
+        <div class="image-containerAP">
+            <img class="image" src="assets/image/icon_5.png" alt="Image 1" width="100px" height="110px">
+        </div>
+    </div>
+        <div class="button-containerAP">
+            <button class="apply-now-btn">Apply Now</button>
+            <a class="know-more-link" href="#">Know More</a>
+        </div>
+    </div>
+    <div class="containerAP">
+        <div class="titleAP">Current Account</div>
+        <div style="display: flex; justify-content: space-between;" >
+        <div class="sub-titleAP">Power up your Business with BRAVO</div>
+        <div class="image-containerAP">
+            <img class="image" src="assets/image/icon_accounts_5.png" alt="Image 1" width="100px" height="110px">
+        </div>
+    </div>
+        <div class="button-containerAP">
+            <button class="apply-now-btn">Apply Now</button>
+            <a class="know-more-link" href="#">Know More</a>
+        </div>
+    </div>
+    <div class="OPENSAVINGACC">
+      <h1>OPEN YOUR SAVINGS ACCOUNT</h1>
+    </div>
+</div> 
+
+     
+    <div class="left-side">
+     
+      <div class="right-side">
+        <div class="content-container">
+          <h1></h1>
+          <p class="para"></p>
+        </div>
+        <div class="input-boxp">
+          <input class="input-box" type="text" placeholder="Name"  formControlName="name" [ngClass]="{'error': isInvalid('name'), 'valid': isValid('name')}" (blur)="validateField('name')">
+          <div *ngIf="isInvalid('name')" class="error-message">
+            <div *ngIf="registrationForm.get('name')?.hasError('required')">Please enter your name</div>
+            <div *ngIf="registrationForm.get('name')?.hasError('pattern')">Invalid name</div>
+          </div>
+          <input class="input-box" type="email" placeholder="Email"  formControlName="email" [ngClass]="{'error': isInvalid('email'), 'valid': isValid('email')}" (blur)="validateField('email')">
+        
+        <div *ngIf="isInvalid('email')" class="error-message">
+          <div *ngIf="registrationForm.get('email')?.hasError('required')">Please enter your email address</div>
+          <div *ngIf="registrationForm.get('email')?.hasError('pattern')">Invalid email address</div>
+        </div>
+        <div class="error-message">{{ errorMessage }}</div>
+        <input class="input-box" type="password" placeholder="Password"  formControlName="password" [ngClass]="{'error': isInvalid('password'), 'valid': isValid('password')}" (blur)="validateField('password')">
+        <div *ngIf="isInvalid('password')" class="error-message">
+          <div *ngIf="registrationForm.get('password')?.hasError('required')">Please enter your password</div>
+          <div *ngIf="registrationForm.get('password')?.hasError('pattern')">Password must contain at least one uppercase letter, one lowercase letter, one digit, one special character, and be at least 8 characters long</div>
+        </div>
+        <!-- <input class="input-box" type="password" placeholder="Confirm Password"  formControlName="confirmpassword" [ngClass]="{'error': isInvalid('confirmpassword'), 'valid': isValid('confirmpassword')}" (blur)="validateField('confirmpassword')">
+        <div *ngIf="isInvalid('confirmpassword')" class="error-message">
+        <div *ngIf="registrationForm.get('confirmpassword')?.hasError('required')">Please enter your confirm password</div>
+        <div *ngIf="registrationForm.get('confirmpassword')?.hasError('mismatch')">Password and confirmpassword does not match</div>  
+      </div> -->
+      <!-- <label for="confirmPassword">Confirm Password:</label> -->
+      <!-- <input type="password" formControlName="confirmpassword"> -->
+      <input class="input-box" type="password" placeholder="Confirm Password"  formControlName="confirmpassword" [ngClass]="{'error': isInvalid('confirmpassword'), 'valid': isValid('confirmpassword')}" (blur)="validateField('confirmpassword')">
+        
+      <!-- <div *ngIf="registrationForm.get('confirmpassword')?.hasError('required')" class="error-message">Please enter your confirm password</div> -->
+      <div *ngIf="registrationForm.hasError('pattern')" class="error-message">Passwords do not match!</div>
+      <div *ngIf="registrationForm.hasError('mismatch')" class="error-message">Passwords do not match!</div>
+
+        <input class="input-box" type="text" placeholder="Fathers Name" id="input-box" formControlName="fathersname" [ngClass]="{'error': isInvalid('fathersname'), 'valid': isValid('fathersname')}" (blur)="validateField('fathersname')">
+<div *ngIf="isInvalid('fathersname')" class="error-message">
+  <div *ngIf="registrationForm.get('fathersname')?.hasError('required')">Please enter your father's name</div>
+  <div *ngIf="registrationForm.get('fathersname')?.hasError('pattern')">Invalid father's name</div>
+</div>
+        
+        <!-- <select class="input-box1">
+          <option value="" disabled selected>Select the City</option>
+          <option value="chennai">Chennai</option>
+          <option value="madurai">Madurai</option>
+          <option value="mumbai">Mumbai</option>
+        </select> -->
+        <input class="input-box" type="text" placeholder="Adhar Number" id="inputm"  formControlName="adhar_number" [ngClass]="{'error': isInvalid('adhar_number'), 'valid': isValid('adhar_number')}" (blur)="validateField('adhar_number')">
+        <div *ngIf="isInvalid('adhar_number')" class="error-message">
+          <div *ngIf="registrationForm.get('adhar_number')?.hasError('required')">Please enter your adhar number</div>
+          <div *ngIf="registrationForm.get('adhar_number')?.hasError('pattern')">Please enter a valid 12-digit Aadhar number</div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="content-container">
+        <h1></h1>
+        <p class="para"></p>
+      </div>
+      <div class="input-boxp" >
+        <input class="input-box" type="text" placeholder="Eduction"  formControlName="education" [ngClass]="{'error': isInvalid('education'), 'valid': isValid('education')}" (blur)="validateField('education')">
+        <div *ngIf="isInvalid('education')" class="error-message">
+          <div *ngIf="registrationForm.get('education')?.hasError('required')">Please enter your education</div>
+          <div *ngIf="registrationForm.get('education')?.hasError('pattern')">Invalid education</div>
+        </div>
+      <input class="input-box" type="text"  placeholder="City"  formControlName="city" [ngClass]="{'error': isInvalid('city'), 'valid': isValid('city')}" (blur)="validateField('city')">
+      <div *ngIf="isInvalid('city')" class="error-message">
+        <div *ngIf="registrationForm.get('city')?.hasError('required')">Please enter your city</div>
+        <div *ngIf="registrationForm.get('city')?.hasError('pattern')">Invalid city</div>
+      </div>
+      <input class="input-box" type="text" placeholder="State"  formControlName="state" [ngClass]="{'error': isInvalid('state'), 'valid': isValid('state')}" (blur)="validateField('state')">
+      <div *ngIf="isInvalid('state')" class="error-message">
+        <div *ngIf="registrationForm.get('state')?.hasError('required')">Please enter your state</div>
+        <div *ngIf="registrationForm.get('state')?.hasError('pattern')">Invalid  state</div>
+      </div>
+      <input class="input-box" type="text" placeholder="Age" maxlength="2" minlength="1"  formControlName="age" [ngClass]="{'error': isInvalid('age'), 'valid': isValid('age')}" (blur)="validateField('age')">
+      <div *ngIf="isInvalid('age')" class="error-message">
+        <div *ngIf="registrationForm.get('age')?.hasError('required')">Please enter your  age</div>
+        <div *ngIf="registrationForm.get('age')?.hasError('pattern')">Invalid age</div>
+        <div *ngIf="registrationForm.get('age')?.hasError('below17')">Age must be below 17</div>  
+      </div>
+      <input class="input-box" type="text" placeholder="Mobile Number"  formControlName="mobilenumber" [ngClass]="{'error': isInvalid('mobilenumber'), 'valid': isValid('mobilenumber')}" (blur)="validateField('mobilenumber')">
+      <div *ngIf="isInvalid('mobilenumber')" class="error-message">
+        <div *ngIf="registrationForm.get('mobilenumber')?.hasError('required')">Please enter your mobile number</div>
+        <div *ngIf="registrationForm.get('mobilenumber')?.hasError('pattern')">Invalid mobile number</div>
+      </div>
+      <input class="input-box" type="number" placeholder="Balance"  formControlName="balance" [ngClass]="{'error': isInvalid('balance'), 'valid': isValid('balance')}" (blur)="validateField('balance')">
+      <div *ngIf="isInvalid('balance')" class="error-message">
+        <div *ngIf="registrationForm.get('balance')?.hasError('required')">Please enter Balance</div>
+        <div *ngIf="registrationForm.get('balance')?.hasError('pattern')">Invalid balance</div>
+      </div>
+    
+      
+       <!-- <select class="input-box1">
+          <option value="" disabled selected>Select the City</option>
+          <option value="chennai">Chennai</option>
+          <option value="madurai">Madurai</option>
+          <option value="mumbai">Mumbai</option>
+        </select> -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="submitfo">
+    <button [disabled]="registrationForm.invalid" (click)="userSubmit()">Register</button>
+  </div>
+  <!-- spinner loading-->
+  <div *ngIf="loading" class="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+</form>
+
+  <!-- footer -->
+  <app-footer></app-footer>
+  
+

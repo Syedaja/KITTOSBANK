@@ -1,0 +1,209 @@
+
+
+
+
+<!-- <div class="contentimage">
+    <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/product-detail/Minor-Banner.jpg" alt="">
+
+</div> -->
+<!-- <div class="container">
+    <div class="image-content">
+      <img src="https://wallpapercave.com/wp/wp5420722.jpg" alt="Banner Image">
+      <div class="content">
+        <div class="left-content">
+          <h2 class="supportint">Support your child’s future with up to 10% p.a.</h2>
+          <p>Get free, unlimited fund transfers with Kotta's Bank Minor’s Savings Account</p>
+          <a routerLink="/account_open" class="button">Open Account</a>
+        </div>
+        <div class="right-content">
+          <ul>
+            <li ><i class="fa-solid fa-money-bill-trend-up"></i>No Average Monthly Balance requirement</li>
+            <li><i class="fa-solid fa-money-bill-trend-up"></i>Sweep out facility</li>
+            <li><i class="fa-solid fa-money-bill-trend-up"></i> free ATM Transactions at Kotta's Bank ATMs</li>
+            <li><i class="fa-solid fa-money-bill-trend-up"></i>Unlimited free ATM transactions anywhere in India</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->  
+
+  <!-- over view  -->
+ <div class="main-container">
+    <div class="details">
+      <a href="#">Overview</a>
+      <a href="#">Eligibility</a>
+      <a href="#">FAQs</a>
+    </div>
+    <a routerLink="/interest"><button class="open-account-btn">Interest Calculate</button></a>
+  </div>
+<!-- read more -->
+  <div class="wholecontent">
+  <div class="content1">
+    <h3>Minor's Savings Account</h3>
+    <div *ngIf="!expanded">
+       <p>Planning for the future of your child is something that's always on your mind. 
+        We're here to help you make sure that your child's future is secure. Our Minor's Savings Account offers interest rates up to 7% so you can watch their funds grow.</p>
+    </div>
+    <div *ngIf="expanded">
+     <p>
+        Planning for the future of your child is something that's always on your mind.
+         We're here to help you make sure that your child's future is secure. Our Minor's Savings Account offers interest rates up to 7% so you can watch their funds grow.
+     </p>
+     
+      <p>
+        But that's not all. It also offers multiple features such as Unlimited Free Fund Transfers, free VISA Debit Card, Unlimited free ATM Transactions at IDFC FIRST Bank ATMs, and lots more.
+        Secure your child's future with an IDFC FIRST Bank Minor's Savings Account.
+      </p>
+    </div>
+    <button (click)="toggleReadMore()" class="bu">
+      {{ expanded ? 'Read Less' : 'Read More' }}
+    </button>
+  </div>
+</div>
+<!-- card content 150px -->
+<div class="cardcont">
+<div class="card">
+    <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/icons/minor.png" alt="Card Image">
+    <div class="card-content">
+      <h3>Unlimited free ATM Transactions on IDFC FIRST Bank ATMs | Free VISA Card valid for life</h3>
+      <h4>Interest up to 10%</h4>
+      <div class="button-container">
+        <button class="buttonop">Learn More</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- another div 2 -->
+<div class="container-round">
+    <div class="left-content-round">
+      <h2>Monthly Interest Credit on your Savings Accounts</h2>
+      <ul>
+        <li>Earn interest on interest with Kotta's Bank.</li>
+        <li>Monthly interest credits versus the industry norm of quarterly interest credit.</li>
+        <button class="cta-button">Learn More</button>
+      </ul>
+    </div>
+    <div class="right-content-round">
+      <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/wholesale-banking/cms/payments/Physical-Payments.png" alt="Round Image" class="image">
+    </div>
+  </div>  
+  <!-- card content another 150px -->
+<div class="cardcont1">
+    <div class="card">
+        <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/Digital-Banking-App-QR-code.png" alt="Card Image">
+        <div class="card-content">
+          <h3>Experience a Mobile Banking revolution</h3>
+          <h4>Track spends, earn rewards, check your risk profile, invest in Mutual Funds in a click, experience Google-like search, cash flow analysis</h4>
+          <div class="button-container">
+            <button class="buttonop">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- div 3  -->
+  <div class="container-square">
+    <div class="left-content-square">
+      <h2>ELIGIBILITY</h2>
+      <h3>Who Can Apply?</h3>
+      <p>A Minor Savings Account can be opened for your child as long as your child is up to 18 years of age and you (the parent or guardian) hold a Savings Account with the bank.</p>
+      <p>If you do not have a savings account with IDFC FIRST Bank then you will need to open one, before you open a Minor’s Account.</p>
+    </div>
+    <div class="image-container-square">
+      <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/personal-banking/MinorEligibility.png" alt="Eligibility Image">
+    </div>
+  </div>
+  <!-- FAQ DIV -->
+  <div class="faq-whole">
+  <div class='faq'>
+    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+    <input id='faq-a' type='checkbox'>
+    <label for='faq-a'>
+      <p class="faq-heading">What are the main features and benefits of an IDFC FIRST Bank Minor Savings Account?</p>
+      <div class='faq-arrow'></div>
+        <p class="faq-text">IDFC FIRST Bank’s Minor Savings Account offers more than just industry-best interest rates, you also get the following benefits and much more.  
+
+ 
+
+            <li> Free Visa Debit Card – When you open a savings account for your child, you also get a free Visa Debit Card which is valid for life.</li>
+            
+            <li>Unlimited Free Fund Transfers – Make hassle-free transfers with your IDFC FIRST Bank Minor Savings Account.</li> 
+            
+            <li> Get up to 7% interest rate for your child.</li> </p>
+    </label>
+    <input id='faq-b' type='checkbox'>
+    <label for='faq-b'>
+      <p class="faq-heading">How does the monthly interest credit for savings account work?</p>
+      <div class='faq-arrow'></div>
+        <p class="faq-text">For the convenience of our customers, the Bank will credit interest to customers’ savings accounts on a monthly basis. The earlier facility of interest credit on quarterly basis on savings accounts will be discontinued from June 30, 2021. The Bank is among the few in the industry to offer monthly interest credit on savings accounts.</p>
+    </label>
+    <input id='faq-c' type='checkbox'>
+    <label for='faq-c'>
+      <p class="faq-heading">What is the age criterion for opening a minor savings account?</p>
+      <div class='faq-arrow'></div>
+        <p class="faq-text">You can open a children savings account for children below the age of 18 years.</p>
+    </label>
+     </div>
+  </div>
+  <!-- div 4 cards -->
+  <div class="cards-head">
+  <h2>Discover Our Banking Products</h2>
+  <div class="whole-card">
+    <div class="division">
+      <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/personal-banking/loans-thumb/personal_loan.png" alt="IDFC First Bank">
+      <h1>Personal Loan</h1>
+      <p>Avail loan for all your personal aspiration with hassle-free application</p>
+      <div class="button">
+        <a href="#">Apply Now</a>
+      </div>
+      <div class="interest-rates">
+        <a href="#">Know More</a>
+      </div>
+    </div>
+    
+    <div class="division">
+      <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/personal-banking/credit%20card.png" alt="IDFC First Bank">
+      <h1>Credit Cards</h1>
+      <p>Move to India's best lifetime Credit Card and debit cards</p>
+      <div class="button">
+        <a href="#">Apply Now</a>
+      </div>
+      <div class="interest-rates">
+        <a href="#">Know More</a>
+      </div>
+    </div>
+    
+    <div class="division">
+      <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/personal-banking/deposit/Fixed-Deposit.png" alt="IDFC First Bank">
+      <h1>Fixed Deposit</h1>
+      <p>Watch your earnings multiply with competitive interest rates</p>
+      <div class="button">
+        <a href="#">Book Now</a>
+      </div>
+      <div class="interest-rates">
+        <a href="#">Know More</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- div 5 svg  -->
+  <div class="svgc">
+    <h2>Get in touch with us</h2>
+   <div class="container-svgc">
+    <div class="item-svgc">
+      <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/n1/home/get-complaints.svg" alt="Image 1">
+      <p>Give a compliment</p>
+    </div>
+    <div class="item-svgc">
+      <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/n1/home/get-complaints.svg" alt="Image 2">
+      <p>Customer support</p>
+    </div>
+    <div class="item-svgc">
+      <img src="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/n1/home/get-branch-icon.svg" alt="Image 3">
+      <p>Locate our branch</p>
+    </div>
+  </div>
+</div>
+<!-- https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/personal-banking/whatapp-banking/Whatsapp-d.jpg -->
+  
+
+

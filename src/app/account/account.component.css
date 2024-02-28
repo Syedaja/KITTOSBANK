@@ -1,0 +1,210 @@
+.global-container{
+	/* height:100vh; */
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(255,255,255);
+}
+.account_history{
+  margin-top:10px; overflow-y: scroll;
+}
+
+
+form{
+	padding-top: 10px;
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+.card-title{ font-weight:600; }
+
+.btn{
+	font-size: 14px;
+	margin-top:20px;
+}
+
+.btn:disabled,
+.btn.disabled {
+    background-color: #007bff !important;
+    color: white !important;
+  
+}
+
+
+
+.login-form{ 
+	/* width:330px; */
+	margin:20px;
+}
+
+.sign-up{
+	text-align:center;
+	padding:20px 0 0;
+}
+
+.alert{
+	margin-bottom:-30px;
+	font-size: 13px;
+	margin-top:20px;
+}
+/* Apply styles to the input when it's invalid */
+.error  {
+    border-color: red;
+    border: 2px solid red;
+  }
+  
+  /* Apply styles to the input when it's valid */
+  .valid  {
+    border-color: green;
+    border: 2px solid green;
+  }
+  .valid-debit {
+    border-color: green; 
+  }
+ 
+  
+  
+  /* Style the error message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+   
+  }
+  .btn {
+    cursor: not-allowed;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .btn:disabled{
+    color: white;
+    background-color: #ccd3d3;
+    border: none; 
+  }
+  .form-inline {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(36,37,38);
+   
+  }
+  .Logonamef::after{
+    content: attr(data-end) ;
+    color:rgb(235,28,36) ;
+    
+  }
+  .Logonames{
+   font-size: 17px;
+   font-weight: 700;
+   color: white;
+   
+  }
+  .Logonamef{
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 5px;
+    color: white; 
+  }
+  /* tabs */
+ #navtab{
+  border-bottom: 1px solid rgb(36,37,38);
+  padding: 15px;
+  
+
+}
+ #taba{
+padding: 10px;
+text-decoration: none;
+font-weight: 700;
+
+
+}
+.col-sm-12{
+padding-left: 0px;
+padding-right: 0px;
+
+
+}
+
+.tab-container {
+
+	padding: 0;
+	border: solid 1px #444;
+	height: 550px;
+	overflow: hidden;
+	width: 100%;
+  overflow-y: scroll;
+}
+.container{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.form-control{
+  width: 100%;
+  height: 50px;
+  border-radius: 0px;
+  background-color: #F0F0F0;
+  
+}
+.inputsearch{
+float: right;
+margin: 10px;
+}
+
+
+
+
+
+/* Apply sticky position when scrolling down */
+@media (min-width: 995px) {
+  .inputsearch {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 1px;
+      z-index: 1000;
+      border: 1px solid #007bff;
+  }
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table thead th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.2);
+}
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+  
+
+  

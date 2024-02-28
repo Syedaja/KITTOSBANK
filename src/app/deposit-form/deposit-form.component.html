@@ -1,0 +1,27 @@
+<form [formGroup]="transactionForm">
+  <label for="amount">Amount:</label>
+  <input
+    type="number"
+    id="amount"
+    formControlName="amount"
+    [ngClass]="{
+      'error': (transactionForm.get('amount')?.hasError('invalidAmount') || transactionForm.get('amount')?.hasError('required')) && transactionForm.get('amount')?.touched,
+      'valid': transactionForm.get('amount')?.valid
+    }"
+  />
+  <div *ngIf="(transactionForm?.get('amount')?.hasError('invalidAmount') || transactionForm?.get('amount')?.hasError('required')) && transactionForm?.get('amount')?.touched" class="error-message">
+    <!-- Display appropriate error message for 'invalidAmount' or 'required' -->
+    <div *ngIf="transactionForm.get('amount')?.hasError('invalidAmount')">
+      Amount cannot exceed 49000 for deposits.
+    </div>
+    <div *ngIf="transactionForm.get('amount')?.hasError('required')">
+      Amount is required.
+    </div>
+  </div>
+
+  <label for="transactionType">Transaction Type:</label>
+  <select id="transactionType" formControlName="transactionType" (change)="updateValidation()">
+    <option value="deposit">Deposit</option>
+    <option value="debit">Debit</option>
+  </select>
+</form>

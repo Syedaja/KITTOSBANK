@@ -1,0 +1,230 @@
+.card1{
+   height: 200px; 
+}
+.logo_img img{
+    height: 40px;
+    width: 40px;
+}
+.logo_img span{
+    font-weight: 800;
+    color: black;
+    padding: 5px;
+}
+/* modal */
+/* Style for the modal */
+.modal-dialog {
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the modal horizontally */
+  }
+  
+  @media (max-width: 768px) {
+    /* Apply styles for screens smaller than 768px (e.g., tablets) */
+    .modal-dialog {
+      max-width: 90%; /* Adjust the maximum width as needed */
+    }
+  }
+  
+  /* Style for form elements within the modal */
+  .form-group {
+    margin-bottom: 20px; /* Add vertical spacing between form elements */
+  }
+  
+  /* Style for input fields */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style for the submit button */
+  .btn-primary {
+    border-radius: 5px;
+    background-color: rgb(167,26,32);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Hover and focus styles for the submit button */
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: black; /* Change the color on hover/focus */
+  }
+  
+  /* Centered text alignment for the modal title */
+  .modal-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Centered text alignment for the modal content */
+  .modal-body label {
+    color: black;
+    font-weight: 500;
+  }
+  
+  /* Close button styles */
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Close button hover style */
+  .close:hover {
+    color: #ff0000; /* Change the color on hover */
+  }
+  .error-message{
+    color: red;
+  }
+  /******* Demo 1 *********/
+.modal.modal-wide{
+	overflow: hidden;
+}
+
+.modal-wide .modal-body {
+	overflow-y: auto;
+}
+
+@-webkit-keyframes custome-animate {
+	0% {
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-transform:  perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+		-moz-transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+		-ms-transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+		transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+		opacity: 0;
+	}
+    68% {
+		-webkit-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+		-moz-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+		-ms-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+		transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+		opacity: 0.8;                
+    }
+	100% {
+		-webkit-transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+		-moz-transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+		-ms-transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+		transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+		opacity: 1;
+	}
+}
+@keyframes custome-animate {
+	0% {
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+		-moz-transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+		-ms-transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+		transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+		opacity: 0;
+	}
+	68% {
+		-webkit-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+		-moz-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+		-ms-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+		transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+		opacity: 0.8;                
+    }
+    100% {
+		-webkit-transform: rotateY(0deg) rotateX(0deg) translateZ(0px);
+		-moz-transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+		-ms-transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+		transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+		opacity: 1;
+	}
+}
+.custome-animate {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+	-webkit-animation-name: custome-animate;
+	animation-name: custome-animate;
+}
+.account_detils{
+  cursor: pointer;
+}
+.clsbtn{
+  float: right;
+ }
+#fromUserId[readonly] {
+  background-color: #f0f0f0; /* Change to your desired color */
+  cursor: not-allowed;
+}
+/* table */
+
+
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+thead th {
+  color: #fff;
+}
+
+/* .card {
+  border-radius: .5rem;
+}
+
+.table-scroll {
+  border-radius: .5rem;
+} */
+.col-12{
+  margin-bottom: 30px;
+  top: 0;
+  height:300px;
+  overflow: scroll;
+}
+.col-md-12{
+  padding: 0px 47px 0px 30px;
+  height: 50px;
+
+}
+.table-scroll table thead th {
+  font-size: 14.08px;
+}
+thead {
+  top: 0;
+  position: sticky;
+}
+
+
+  
+
+/* custom-modal.component.css */
+.modal11 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content11 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+

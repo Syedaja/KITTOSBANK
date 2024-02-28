@@ -1,0 +1,637 @@
+<head>
+  <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"></head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body>
+      <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+          <div class="app-header header-shadow">
+              <div class="app-header__logo">
+                  <div class="logo_img"><img src="\assets\image\BankLogo.png" alt="logo"><span>Kotta's</span></div>
+                  <div class="header__pane ml-auto">
+                      <div>
+                          <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                              <span class="hamburger-box">
+                                  <span class="hamburger-inner"></span>
+                              </span>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="app-header__mobile-menu">
+                  <div>
+                      <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                          <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                          </span>
+                      </button>
+                  </div>
+              </div>
+              <div class="app-header__menu">
+                  <span>
+                      <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                          <span class="btn-icon-wrapper">
+                              <i class="fa fa-ellipsis-v fa-w-6"></i>
+                          </span>
+                      </button>
+                  </span>
+              </div>   
+               <div class="app-header__content">
+               
+                  <div class="app-header-right">
+                      <div class="header-btn-lg pr-0">
+                          <div class="widget-content p-0">
+                              <div class="widget-content-wrapper">
+                                  <div class="widget-content-left">
+                                      <div class="btn-group">
+                                          <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            Money Transfer
+                                              <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                          </a>
+                                          <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                              <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                              <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                              <a href="" data-toggle="modal" data-target=".bs-example-modal-new" style="text-decoration: none;"><h6 tabindex="-1" class="dropdown-header" >Money Transfer</h6></a>
+                                              <button type="button" tabindex="0" class="dropdown-item">Loans</button>
+                                              <div tabindex="-1" class="dropdown-divider"></div>
+                                              <button type="button" tabindex="0" class="dropdown-item">Insurance</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="widget-content-left  ml-3 header-user-info">
+                                      <div class="widget-heading">
+                                          Alina Mclourd
+                                      </div>
+                                      <div class="widget-subheading">
+                                          VP People Manager
+                                      </div>
+                                  </div>
+                                  <div class="widget-content-right header-user-info ml-3">
+                                      <button type="button" class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
+                                          <i class="fa text-white fa-calendar pr-1 pl-1"></i>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>        </div>
+              </div>
+          </div>        
+          
+                 <div class="app-main">
+                  <div class="app-sidebar sidebar-shadow">
+                      <div class="app-header__logo">
+                          <div class="logo-src"></div>
+                          <div class="header__pane ml-auto">
+                              <div>
+                                  <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                      <span class="hamburger-box">
+                                          <span class="hamburger-inner"></span>
+                                      </span>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="app-header__mobile-menu">
+                          <div>
+                              <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                  <span class="hamburger-box">
+                                      <span class="hamburger-inner"></span>
+                                  </span>
+                              </button>
+                          </div>
+                      </div>
+                      <div class="app-header__menu">
+                          <span>
+                              <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                  <span class="btn-icon-wrapper">
+                                      <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                  </span>
+                              </button>
+                          </span>
+                      </div>    <div class="scrollbar-sidebar">
+                          <div class="app-sidebar__inner">
+                              <ul class="vertical-nav-menu">
+                                  <li class="app-sidebar__heading">Accounts</li>
+                                  <i class="fa-solid fa-money-bill-transfer"></i>
+                                  <li>
+                                      <a  data-toggle="modal" data-target="#myModal" class="account_detils">
+                                        <i class="fa-regular fa-user"></i>
+                                         Account Details
+                                      </a>
+                                  </li>
+                                  <li class="app-sidebar__heading">Deposits</li>
+                                  <li
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                  >
+                                      <a href="#">
+                                          <!-- <i class="metismenu-icon pe-7s-diamond"></i> -->
+                                          Deposits
+                                          <!-- <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i> -->
+                                      </a>
+                                      <ul>
+                                          <li>
+                                              <a href="elements-buttons-standard.html">
+                                                  <i class="metismenu-icon"></i>
+                                                  Fixed Deposit
+  
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="elements-dropdowns.html">
+                                                Recurring Deposits
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="elements-icons.html">
+                                                NRI Fixed Deposits
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="elements-badges-labels.html">
+                                                Safe Deposit Locker
+                                              </a>
+                                          </li>
+                                         
+                                      </ul>
+                                  </li>
+                                  <li>
+                                      <a href="#">
+                                          <!-- <i class="metismenu-icon pe-7s-car"></i> -->
+                                          Loans
+                                          <!-- <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i> -->
+                                      </a>
+                                      <ul>
+                                          <li>
+                                              <a href="components-tabs.html">
+                                                  <!-- <i class="metismenu-icon">
+                                                  </i>Tabs -->
+                                                  Child Loan
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="components-accordions.html">
+                                                  <!-- <i class="metismenu-icon">
+                                                  </i>Accordions -->
+                                                  Health Loan
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="components-notifications.html">
+                                                  <!-- <i class="metismenu-icon">
+                                                  </i>Notifications -->
+  
+                                              </a>
+                                          </li>
+                                          <!-- <li>
+                                              <a href="components-modals.html">
+                                                  <i class="metismenu-icon">
+                                                  </i>Modals
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="components-progress-bar.html">
+                                                  <i class="metismenu-icon">
+                                                  </i>Progress Bar
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="components-tooltips-popovers.html">
+                                                  <i class="metismenu-icon">
+                                                  </i>Tooltips &amp; Popovers
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="components-carousel.html">
+                                                  <i class="metismenu-icon">
+                                                  </i>Carousel
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="components-calendar.html">
+                                                  <i class="metismenu-icon">
+                                                  </i>Calendar
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="components-pagination.html">
+                                                  <i class="metismenu-icon">
+                                                  </i>Pagination
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="components-scrollable-elements.html">
+                                                  <i class="metismenu-icon">
+                                                  </i>Scrollable
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="components-maps.html">
+                                                  <i class="metismenu-icon">
+                                                  </i>Maps
+                                              </a>
+                                          </li> -->
+                                      </ul>
+                                  </li>
+                                  <li  >
+                                      <a href="tables-regular.html">
+                                          <!-- <i class="metismenu-icon pe-7s-display2"></i> -->Kotta's Wealth</a>
+                                  </li>
+                                  <li class="app-sidebar__heading">FIRST Private Mutual Funds
+                                    </li>
+                                  <li>
+                                      <a href="dashboard-boxes.html">
+                                          <!-- <i class="metismenu-icon pe-7s-display2"></i> -->
+                                          Sovereign Gold Bond
+                                         
+                                      </a>
+                                  </li>
+                                  <li class="app-sidebar__heading">Insurance
+                                   </li>
+                                  <li>
+                                      <a href="forms-controls.html">
+                                          <!-- <i class="metismenu-icon pe-7s-mouse"> </i> -->
+                                           Term Insurance
+                                         
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="forms-layouts.html">
+                                          <!-- <i class="metismenu-icon pe-7s-eyedropper"></i>  -->
+                                          Life Insurance
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="forms-validation.html">
+                                          <!-- <i class="metismenu-icon pe-7s-pendrive"></i> -->
+                                          Child Card
+                                      </a>
+                                  </li>
+                                  <li class="app-sidebar__heading">Cards</li>
+                                  
+                                
+                              </ul>
+                          </div>
+                      </div>
+                  </div>    <div class="app-main__outer">
+                      <div class="app-main__inner">
+                          <div class="app-page-title">
+                              <div class="page-title-wrapper">
+                                  <div class="page-title-heading">
+                                      <div class="page-title-icon">
+                                        <i class="fa-regular fa-face-smile"></i>
+                                      </div>
+                                      <div *ngIf="data">{{data.name}}
+                                          <div class="page-title-subheading">Welcome this is your savings account.
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="page-title-actions">
+                                      <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
+                                          <i class="fa fa-star"></i>
+                                      </button>
+                                      <div class="d-inline-block dropdown">
+                                          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info" >
+                                              <span class="btn-icon-wrapper pr-2 opacity-7">
+                                                  <i class="fa fa-business-time fa-w-20"></i>
+                                              </span>
+                                              Logout
+                                          </button>
+                                          <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                              <ul class="nav flex-column">
+                                                  <li class="nav-item">
+                                                      <a href="javascript:void(0);" class="nav-link">
+                                                          <i class="nav-link-icon lnr-inbox"></i>
+                                                          <span>
+                                                              Notification
+                                                          </span>
+                                                          <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                      <a href="javascript:void(0);" class="nav-link">
+                                                          <i class="nav-link-icon lnr-book"></i>
+                                                          <span>
+                                                              Statement
+                                                          </span>
+                                                          <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                      <a href="javascript:void(0);" class="nav-link">
+                                                          <i class="nav-link-icon lnr-picture"></i>
+                                                          <span>
+                                                            Account deatils
+                                                          </span>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                      <a disabled href="javascript:void(0);" class="nav-link">
+                                                          <i class="nav-link-icon lnr-file-empty"></i>
+                                                          <span (click)="logout()">
+                                                          Logout
+                                                          </span>
+                                                      </a>
+                                                  </li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>    </div>
+                          </div>            
+                          <div class="row" *ngIf="data">
+                              <div class="col-md-6 col-xl-4">
+                                  <div class="card mb-3 widget-content bg-midnight-bloom card1 " >
+                                      <div class="widget-content-wrapper text-white">
+                                          <div class="widget-content-left" style="font-size: 17px;">
+                                              <div class="widget-heading">Account Number</div>
+                                              <div class="widget-subheading">{{data.ACCOUNTNUMBER}}</div>
+                                          </div>
+                                          <div class="widget-content-right">
+                                              <!-- <div class="widget-numbers text-white"><span>1896</span></div> -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 col-xl-4" *ngIf="data">
+                                  <div class="card mb-3 widget-content bg-arielle-smile card1" >
+                                      <div class="widget-content-wrapper text-white">
+                                          <div class="widget-content-left" style="font-size: 17px;">
+                                              <div class="widget-heading">City</div>
+                                              <div class="widget-subheading">{{data.city}}</div>
+                                          </div>
+                                          <div class="widget-content-right">
+                                              <!-- <div class="widget-numbers text-white"><span>$ 568</span></div> -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 col-xl-4" *ngIf="data">
+                                  <div class="card mb-3 widget-content bg-grow-early card1">
+                                      <div class="widget-content-wrapper text-white">
+                                          <div class="widget-content-left" style="font-size: 17px;">
+                                              <div class="widget-heading">Account</div>
+                                              <div class="widget-subheading">Balance</div>
+                                          </div>
+                                          <div class="widget-content-right">
+                                              <div class="widget-numbers text-white"><span>₹{{data.balance}}</span></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="main-card mb-3 card">
+                                      <div class="card-header">Transaction History
+                                          <div class="btn-actions-pane-right">
+                                              <div role="group" class="btn-group-sm btn-group">
+                                                  <button class="active btn btn-focus">Last Week</button>
+                                                  <button class="btn btn-focus">All Month</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                     
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- tanble start -->
+                          
+                            
+                             
+                                <div class="container">
+                                  <div class="row justify-content-center">
+                                    <div class="col-12">
+                                      <div class="card">
+                                        <div class="card-body p-0">
+                                          <div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true" >
+                                            <table class="table table-striped mb-0">
+                                              <thead style="background-color: #002d72;">
+                                                <tr>
+                                                  <th scope="col">Your Ac.No</th>
+                                                  <th scope="col">Amount</th>
+                                                  <th scope="col">Transaction</th>
+                                                  <th scope="col">Date & Time</th>
+                                                  
+                                                </tr>
+                                              </thead>
+                                              
+                                              <tbody>
+                                                <tr *ngFor="let transaction of datahis" >
+                                                  <td>{{transaction.user_id}}</td>
+                                                  <td [ngStyle]="{'color': transaction.amount === '' ? 'green' : 'red'}">{{transaction.amount}}</td>
+                                                  <td>{{transaction.transaction_type}}</td>
+                                                  <td>{{transaction.timestamp}}</td>
+                                                  
+                                              
+                                                </tr>
+                                                
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                           
+                           
+                       
+                          <!-- table end -->
+                          <div class="row">
+                              
+                             
+                             
+                            
+                          </div>
+                      </div>
+                      <div class="app-wrapper-footer">
+                          <div class="app-footer">
+                              <div class="app-footer__inner">
+                                  <div class="app-footer-left">
+                                      <ul class="nav">
+                                          <li class="nav-item">
+                                              <a href="javascript:void(0);" class="nav-link">
+                                                  Disclaimer
+                                              </a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a href="javascript:void(0);" class="nav-link">
+                                                  Privacy policy
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="app-footer-right">
+                                      <ul class="nav">
+                                          <li class="nav-item">
+                                              <a href="javascript:void(0);" class="nav-link">
+                                                  Termd & conditions
+                                              </a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a href="javascript:void(0);" class="nav-link">
+                                                  <div class="badge badge-success mr-1 ml-0">
+                                                      <small>NEW</small>
+                                                  </div>
+                                                  Other Link +
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>    </div>
+                  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+          </div>
+      </div>
+  
+      <!-- modql money transfer -->
+      <div class="container">
+       
+    
+        <!-- Your modal structure goes here -->
+        <div class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="my" *ngIf="transamodal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Money Transfer</h4>
+              </div>
+              <div class="modal-body">
+                  
+                  <div class="form-group">
+                    <label for="input1">From Account </label>
+                    <input type="number" class="form-control" id="fromUserId" placeholder="From Acc Num" [(ngModel)]="fromUserId" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="input2">To Account</label>
+                    <input type="number" class="form-control" id="toUserId" placeholder="To Acc Num" [(ngModel)]="toUserId">
+                  </div>
+                  <div class="form-group">
+                    <label for="input2">Enter The Amount</label>
+                    <input type="number" class="form-control" id="amount" placeholder="Enter Amount" [(ngModel)]="amount">
+                  </div>
+                  <button class="btn btn-primary btn-block" (click)="transferMoney()" >Transfer Money</button>
+                  <p class="error-message">{{message}}</p>
+                  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+                  <div *ngIf="insufficientBalanceError" class="error-message">{{ insufficientBalanceError }}</div>
+                  <div *ngIf="transactionError" class="error-message">{{ transactionError }}</div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+<div class="modal modal-wide " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog custome-animate">
+      <div class="modal-content">
+       
+        <div class="modal-body">
+           
+           <dl class="row" *ngIf="data">
+            <dt class="col-sm-3">Account Number</dt>
+            <dd class="col-sm-9">{{data.ACCOUNTNUMBER}}</dd>
+            <dt class="col-sm-3">Email Id</dt>
+            <dd class="col-sm-9">{{data.email}}</dd>
+            <dt class="col-sm-3">Adhar number</dt>
+            <dd class="col-sm-9">{{data.adhar_number}}</dd>
+            <dt class="col-sm-3">Education</dt>
+            <dd class="col-sm-9">{{data.education}}</dd>
+            <dt class="col-sm-3">City</dt>
+            <dd class="col-sm-9">{{data.city}}</dd>
+            <dt class="col-sm-3">State</dt>
+            <dd class="col-sm-9">{{data.state}}</dd>
+            <dt class="col-sm-3">Age</dt>
+            <dd class="col-sm-9">{{data.age}}</dd>
+            <dt class="col-sm-3">Mobile Number</dt>
+            <dd class="col-sm-9">{{data.mobilenumber}}</dd>
+            <dt class="col-sm-3">Father's Name</dt>
+            <dd class="col-sm-9">{{data.fathersname}}</dd>
+            <!-- <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#success">Transaction Success</button>
+            <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#fail">Transaction Failure</button> -->
+          </dl>
+          <div class="clsbtn">
+          <button type="button" class=" btn btn-primary"  id="clsbtn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+ <!-- success modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="success" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border:none;border-radius: 5px;">
+        <div class="modal-header" style="    background: #1ab394;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;">
+          <button type="button" class="close" data-dismiss="modal" style="opacity:1;color:#fff;">&times;</button>
+          <h4 class="modal-title text-center"><img src="https://lh3.googleusercontent.com/-Zxh4srAEtU0/Wp0cZV-PJuI/AAAAAAAAD4E/En5x5c53s44jzvG8M0sSyFZXoRhGXfBzwCL0BGAYYCw/h100/2018-03-05.png" alt=""></h4>
+        </div>
+        <div class="modal-body">
+          <p style="text-align:center;color:#1ab394;font-size:24px;font-weight:500;">Cheers! Payment Successful!</p>
+          <p style="color:#555555;">Transaction ID:&nbsp;<strong style="font-weight:500;font-size:16px;color: #222222;">152458258752515</strong><br>Payment amount:&nbsp;<strong style="font-weight:500;font-size:16px;color: #222222;">Rs.35000</strong><br>The above rent shall credited to your landlord's bank account in<strong style="font-weight:500;font-size:15px;color: #222222;"> 3 working days</strong></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<div class="modal fade" id="fail" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border:none;border-radius: 5px;">
+        <div class="modal-header" style="    background: #d75a4a;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;">
+          <button type="button" class="close" data-dismiss="modal" style="opacity:1;color:#fff;">&times;</button>
+          <h4 class="modal-title text-center"><img src="https://lh3.googleusercontent.com/-ApBj8d4WL1E/Wp0fJeAD6jI/AAAAAAAAD4M/Dh6l_UiA64kln8PS-1SaDQFuhb9KJL40gCL0BGAYYCw/h100/2018-03-05.png" alt=""></h4>
+        </div>
+        <div class="modal-body">
+          <p style="text-align:center;color:#d75a4a;font-size:24px;font-weight:500;">Sorry! your payment failed!</p>
+          <p style="color:#555555;">Transaction ID:&nbsp;<strong style="font-weight:500;font-size:16px;color: #222222;">152458258752515</strong><br>Payment amount:&nbsp;<strong style="font-weight:500;font-size:16px;color: #222222;">Rs.35000</strong><br>If your payment got detucted for above transaction, the same shall be credited back to your account in<strong style="font-weight:500;font-size:15px;color: #222222;"> 5 working days</strong></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+      <!-- custom-modal.component.html -->
+<div class="modal11" *ngIf="showModal" >
+    <div class="modal-content11">
+      <h2>{{ modalMessage }}</h2>
+      <div>
+        <p>From Account{{ fromUserId }}</p>
+        <p>To Account:{{ toUserId}}</p>
+        <p>Amount:{{amount}}</p>
+      </div>
+    </div>
+  </div>
+  
+  </body>
+ 
+
+    
+
+  
+
+  
+  

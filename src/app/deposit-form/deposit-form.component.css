@@ -1,0 +1,13 @@
+.error {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  .valid {
+    border: 2px solid green;
+  }
+  
+  

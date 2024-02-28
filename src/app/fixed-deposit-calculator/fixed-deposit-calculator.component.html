@@ -1,0 +1,132 @@
+
+<body>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+<!-- logo container -->
+<div class="logo-container" >
+  <div class="logo"><a href="#"><img src="assets\image\BankLogo.png" alt="Logo"><span data-end="s" class="Logonamef">Kotta'</span><span class="Logonames">Bank</span></a></div>
+</div>
+<div>
+  <div class="container" id="container">
+      <h1 class="fix">Deposit Interest Calculator</h1>
+      <div class="form-group">
+        <label for="principal">Principal Amount (INR)</label>
+        <input type="number" class="form-control" id="principal" name="principal" [(ngModel)]="principal" (ngModelChange)="calculateMaturity()" required min="1">
+      </div>
+      <div class="form-group">
+        <label for="tenure">Tenure (years)</label>
+        <select class="form-control" id="tenure" name="tenure" [(ngModel)]="tenure" (ngModelChange)="calculateMaturity()" required>
+          <option value="3">3 years</option>
+          <option value="5">5 years</option>
+          <option value="8">8 years</option>
+          <option value="10">10 years</option>
+          <option value="15">15 years</option>
+          <option value="20">20 years</option>
+          <option value="25">25 years</option>
+          <option value="30">30 years</option>
+        </select>
+      </div>
+      <div class="result" *ngIf="maturityAmount !== null">
+        <h2>Maturity Amount: {{ maturityAmount | currency:'INR' }}</h2>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+<div class="table-responsive">
+<table class="table table-bordered   table-striped" style="margin-top:100px">
+  <thead class="table__head">
+    <tr class="winner__table">
+      <th>S/N</th>
+      <th><i class="fa fa-user" aria-hidden="true"></i> Type</th>
+      <th><i class="fa fa-map-marker" aria-hidden="true"></i> City</th>
+      <th><i class="fa fa-calendar-o" aria-hidden="true"></i> Yaers</th>
+      <th> <i class="fa fa-phone" aria-hidden="true"></i> Interest</th>
+      <th><i class="fa fa-trophy" aria-hidden="true"></i> Reward</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="winner__table">
+      <td>1</td>
+      <td>Deposit</td>
+      <td>Bangalore</td>
+      <td>3 Years</td>
+      <td>5%</td>
+      <th>Siver Coin</th>
+    </tr>
+
+    <tr class="winner__table">
+        <td>2</td>
+        <td>Deposit</td>
+        <td>Bangalore</td>
+        <td>5 Years</td>
+        <td>5%</td>
+      <th>Siver Coin </th>
+      </tr>
+
+      <tr class="winner__table">
+        <td>3</td>
+        <td>Deposit</td>
+        <td>Bangalore</td>
+        <td>8 Years</td>
+        <td>5%</td>
+        <th>Siver Coin</th>
+      </tr>
+   
+      <tr class="winner__table">
+        <td>4</td>
+        <td>Deposit</td>
+        <td>Bangalore</td>
+        <td>10 Years</td>
+        <td>6.5%</td>
+       <th>Siver Coin </th>
+      </tr>
+      
+      <tr class="winner__table">
+        <td>5</td>
+        <td>Deposit</td>
+        <td>Bangalore</td>
+        <td>15 Years</td>
+        <td>6.5%</td>
+        <th>Siver Coin </th>
+      </tr>
+      <tr class="winner__table">
+        <td>6</td>
+        <td>Deposit</td>
+        <td>Bangalore</td>
+        <td>20 Years</td>
+        <td>10%</td>
+        <th>Gold Coin</th>
+      </tr>
+      <tr class="winner__table">
+        <td>7</td>
+        <td>Deposit</td>
+        <td>Bangalore</td>
+        <td>25 Years</td>
+        <td>10%</td>
+        <th>Gold Coin </th>
+      </tr>
+      <tr class="winner__table">
+        <td>8</td>
+        <td>Deposit</td>
+        <td>Bangalore</td>
+        <td>30 Years</td>
+        <td>10%</td>
+        <th>Gold Coin </th>
+      </tr>
+
+  </tbody>
+</table>
+</div>
+</div>
+
+
+  <!-- <app-footer></app-footer> -->
+</body>
+<app-footer></app-footer>
